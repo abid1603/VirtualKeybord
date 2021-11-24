@@ -1,0 +1,84 @@
+
+body{
+    margin: 50px 10px 50px 50px;
+    padding: 20px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#textArea{
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    width: 500px;
+    height: 150px;
+    font-size: 18px;
+    color: green;
+}
+.bsize{
+    font-size: 40px;
+}
+.color-green{
+    color: rgb(30, 211, 150);
+    overflow: hidden;
+}
+ul li{
+    font-size: 25px;
+}
+.keybord{
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    padding: 5px 0;
+    background: #004134;
+    box-shadow: 0 0 50px rgba(0, 0, 0, 0.5);
+    user-select: none;
+    transition: 0.4s;
+}
+.keybord--hiden{
+    bottom: -100%;
+}
+.keybord_keys{
+    text-align: center;
+}
+.keybord_key{
+    height: 45px;
+    width: 6%;
+    max-width: 90px;
+    border: none;
+    margin: 3px;
+    border-radius: 5px;
+    background: rgba(225, 225, 225, 0.2);
+    color: white;
+    font-size: 1.05rem;
+    outline: none;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    vertical-align: top;
+    padding: 0px;
+    -webkit-tap-highlight-color: transparent;
+    position: relative;
+}
+.keybord_key:active{
+    background: rgba(255, 255, 255, 0.20) ;
+}
+.key_active::after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 8px;
+    height: 8px;
+    background: rgba(0, 0, 0, 0.4);
+    border-radius: 50%;
+}
+.activated::after{
+    background: rgb(4, 179, 80);
+}
+.activated-dark{
+    background: rgba(0, 0, 0, 0.4);
+}
+.row{
+display: block;
+}

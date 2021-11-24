@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+    <title>Virtual Keyboard</title>
+</head>
+<body>
+    <h1 class="color-green bsize">Virtual Keyboard with HTML,CSS,JS</h1>
+    <hr>
+    
+    <h3>Feature</h3>
+    <ul>
+        <li>Easy to Integrate</li>
+        <li>Responsive</li>
+        <li>vanilla Js (<strong class="color-green">no libraries required!</strong>)</li>
+    </ul>
+
+    <textarea  name="text" id="textArea"></textarea>
+
+ <div class="keybord">
+        <div class="keybord_keys"> 
+            <div class="row">
+                <button onclick="setValue(event)" value="1" class="keybord_key">1</button>
+                <button onclick="setValue(event)" value="2" class="keybord_key">2</button>
+                <button onclick="setValue(event)" value="3" class="keybord_key">3</button>
+                <button onclick="setValue(event)" value="4" class="keybord_key">4</button>
+                <button onclick="setValue(event)" value="5" class="keybord_key">5</button>
+                <button onclick="setValue(event)" value="6" class="keybord_key">6</button>
+                <button onclick="setValue(event)" value="7" class="keybord_key">7</button>
+                <button onclick="setValue(event)" value="8" class="keybord_key">8</button>
+                <button onclick="setValue(event)" value="9" class="keybord_key">9</button>
+                <button onclick="setValue(event)" value="0" class="keybord_key">0</button>
+                <button onclick="backspace(event)" type="button" class="keybord_key">
+                    <i class="material-icons">backspace</i>
+                </button>
+            </div>
+
+            <div class="row">
+                <button onclick="setValue(event)" value="Q" class="keybord_key">Q</button>
+                <button onclick="setValue(event)" value="W" class="keybord_key">W</button>
+                <button onclick="setValue(event)" value="E" class="keybord_key">E</button>
+                <button onclick="setValue(event)" value="R" class="keybord_key">R</button>
+                <button onclick="setValue(event)" value="T" class="keybord_key">T</button>
+                <button onclick="setValue(event)" value="Y" class="keybord_key">Y</button>
+                <button onclick="setValue(event)" value="U" class="keybord_key">U</button>
+                <button onclick="setValue(event)" value="I" class="keybord_key">I</button>
+                <button onclick="setValue(event)" value="O" class="keybord_key">O</button>
+                <button onclick="setValue(event)" value="P" class="keybord_key">P</button>
+                <button onclick="newline(event)" type="button" class="keybord_key">
+                    <i class="material-icons">keyboard_return</i>
+                </button>
+            </div>
+
+            <div class="row">
+                <button onclick="capsLock(event)" id="capslock" type="button" class="keybord_key key_active">
+                    <i class="material-icons">keyboard_capslock</i>
+                </button>
+                <button onclick="setValue(event)" value="A" class="keybord_key">A</button>
+                <button onclick="setValue(event)" value="S" class="keybord_key">S</button>
+                <button onclick="setValue(event)" value="D" class="keybord_key">D</button>
+                <button onclick="setValue(event)" value="F" class="keybord_key">F</button>
+                <button onclick="setValue(event)" value="G" class="keybord_key">G</button>
+                <button onclick="setValue(event)" value="H" class="keybord_key">H</button>
+                <button onclick="setValue(event)" value="J" class="keybord_key">J</button>
+                <button onclick="setValue(event)" value="K" class="keybord_key">K</button>
+                <button onclick="setValue(event)" value="L" class="keybord_key">L</button>
+            </div>
+
+            <div class="row">
+                <button onclick="setValue(event)" value="Z" class="keybord_key">Z</button>
+                <button onclick="setValue(event)" value="X" class="keybord_key">X</button>
+                <button onclick="setValue(event)" value="C" class="keybord_key">C</button>
+                <button onclick="setValue(event)" value="V" class="keybord_key">V</button>
+                <button onclick="setValue(event)" value="B" class="keybord_key">B</button>
+                <button onclick="setValue(event)" value="N" class="keybord_key">N</button>
+                <button onclick="setValue(event)" value="M" class="keybord_key">M</button>
+            </div>
+
+            <div class="row">
+                <button onclick="setValue(event)" value=" " type="button" class="keybord_key">
+                    <i class="material-icons">space_bar</i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+</html>
